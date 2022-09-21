@@ -1,0 +1,52 @@
+{
+  "name": "ng-pick-datetime",
+  "version": "14.0.2",
+  "description": "Angular Date Time Picker",
+  "keywords": [
+    "Angular",
+    "datepicker",
+    "date picker",
+    "timepicker",
+    "time picker"
+  ],
+  "author": "daniel pan <myron.yk.pan@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielYKPan/date-time-picker.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^14.0.2",
+    "@angular/core": "^14.0.2",
+    "@angular/cdk": "^14.0.2"
+  },
+  "module": "fesm2015/ng-pick-datetime.mjs",
+  "es2020": "fesm2020/ng-pick-datetime.mjs",
+  "esm2020": "esm2020/ng-pick-datetime.mjs",
+  "fesm2020": "fesm2020/ng-pick-datetime.mjs",
+  "fesm2015": "fesm2015/ng-pick-datetime.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    "./assets/style/picker.min.css":{
+      "default": "./assets/style/picker.min.css"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/ng-pick-datetime.mjs",
+      "es2020": "./fesm2020/ng-pick-datetime.mjs",
+      "es2015": "./fesm2015/ng-pick-datetime.mjs",
+      "node": "./fesm2015/ng-pick-datetime.mjs",
+      "default": "./fesm2020/ng-pick-datetime.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}
